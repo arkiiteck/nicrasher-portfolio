@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Pixeloid';
+    src: url('../assets/fonts/PixeloidSans-Bold.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixeloid';
+}
+body#homeBody{
+    overflow-x: hidden;
+    cursor: none;
+}
+#home-first-floor{
+    background-image: url(../assets/images/EscenarioCafe.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#character{
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    bottom: 50px;
+}
+.linkButton{
+    background-color: #000000;
+    width: 300px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    color: #0077EB;
+    font-size: 32px;
+    border: solid 6px #106A98;
+    border-radius: 12px;
+    text-decoration: none;
+    transform: translateX(-10%);
+    cursor: none;
+    opacity: .7;
+    transform: .4s;
+    filter: sepia(1);
+    animation: buttonAnimation 1.5s infinite;
+}
+@keyframes buttonAnimation {
+    0%{
+        transform: translateX(-10%) translateY(0);
+    }
+    50%{
+        transform: translateX(-10%) translateY(-10%);
+    }
+    100%{
+        transform: translateX(-10%) translateY(0);
+    }
+}
+.linkButton:hover{
+    opacity: 1;
+    filter: sepia(0);
+    transform: .4s;
+}
+.linkButton:nth-child(2){
+    top: 40%;
+    left: 10%;
+}
+.linkButton:nth-child(3){
+    top: 30%;
+    left: 35%;
+}
+.linkButton:nth-child(4){
+    top: 40%;
+    left: 73%;
+}
+.linkButton img{
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(calc(100% + 4px));
+}
+.FirstFloor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+#audioButton{
+    z-index: 3;
+}
+#audioButton{
+    background: none;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border: none;
+}
+#audioButton img{
+    width: 80px;
+    height: 80px;
+}
+#mousePointer{
+    width: 90px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-100%);
+    z-index: 4;
+}
