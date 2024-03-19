@@ -398,6 +398,45 @@ body#homeBody{
     width: 80px;
     height: 80px;
 }
+#tv{
+    width: 55%;
+    height: 250px;
+    position: absolute;
+}
+#tv, .tvVideo, .tvImage{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+#tv .tvVideo{
+    width: 65%;
+    aspect-ratio: 1/0.6;
+    object-fit: cover;
+    position: absolute;
+    left: 40%;
+}
+#tv .tvImage{
+    width: 90%;
+    position: absolute;
+}
+#tv .buttons{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+.upButton, .downButton{
+    background: none;
+    display: flex;
+    border: none;
+}
+.upButton img, .downButton img{
+    width: 100%;
+}
 #mousePointer{
     width: 90px;
     position: absolute;

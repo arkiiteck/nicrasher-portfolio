@@ -3,5 +3,7 @@
 *.gif
 # Audios
 *.mp3
-# VFonts
+# Videos
+*.mp4
+# Fonts
 *.ttf
