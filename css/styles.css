@@ -518,3 +518,151 @@ body#homeBody{
     transform: translateX(-50%) translateY(-100%);
     z-index: 4;
 }
+@media (max-width:1600px) {
+    #tv .buttons{
+        top: 30%;
+    }
+}
+@media (max-width:1200px){
+    .myProjectsContent article{
+        width: 100%;
+        justify-content: center;
+    }
+    .myProjectsContent article img{
+        display: none;
+    }
+    .myProjectsContent article .light{
+        display: none;
+    }
+    .myProjectsContent article .projectContainer{
+        width: 80%;
+    }
+    .myProjectsContent article .projectContainer video{
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        opacity: 1;
+    }
+    .myProjectsContent article .projectContainer .projectContent{
+        width: 50%;
+        height: 300px;
+        position: relative;
+        animation: none;
+    }
+}
+@media (max-width:1000px) {
+    .linkButton:nth-child(3){
+        top: 25%;
+        left: 30%;
+    }
+    .linkButton:nth-child(4){
+        top: 50%;
+        left: 48%;
+    }
+    .infoContent .social{
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoContent .social img{
+        width: 200px;
+        height: 200px;
+    }
+    .infoContent .social .socialButton{
+        width: 300px;
+        height: 70px;
+        gap: 16px;
+        font-size: 28px;
+    }
+    .infoContent .social .socialButton img{
+        width: 36px;
+    }
+    #audioButton{
+        top: 10px;
+        right: 20px;
+    }
+    .return{
+        top: 10px;
+        left: 20px;
+    }
+    #audioButton img, .return img{
+        width: 60px;
+        height: 60px;
+    }
+    #tv{
+        width: 95%;
+    }
+    .myProjectsContent article .projectContainer{
+        flex-direction: column;
+    }
+    .myProjectsContent article .projectContainer video{
+        width: 100%;
+    }
+    .myProjectsContent article .projectContainer .projectContent{
+        width: 100%;
+        background: black;
+    }
+    .myProjectsContent article .projectContainer .projectContent h2{
+        color: white;
+    }
+    .myProjectsContent article .projectContainer .projectContent p{
+        color: white;
+    }
+}
+@media (max-width:600px) {
+    #character{
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .linkButton:nth-child(2), .linkButton:nth-child(3), .linkButton:nth-child(4){
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .linkButton:nth-child(2){
+        top: 15%;
+    }
+    .linkButton:nth-child(3){
+        top: 30%;
+    }
+    .linkButton:nth-child(4){
+        top: 45%;
+    }
+    @keyframes buttonAnimation {
+        0%{
+            transform: translateX(-50%) translateY(0);
+        }
+        50%{
+            transform: translateX(-50%) translateY(-10%);
+        }
+        100%{
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+    .infoContainer{
+        width: 80%;
+    }
+    .infoContent{
+        height: 550px;
+        margin-left: 10px;
+        padding: 80px 10% 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .pipelines{
+        display: grid;
+        grid-template-rows: repeat(10, 100px);
+        grid-template-columns: repeat(3, 100px);
+    }
+    #tv .buttons{
+        top: 39%;
+    }
+    .myProjectsContent article .projectContainer{
+        width: 100%;
+    }
+    .myProjectsContent article{
+        padding: 0;
+    }
+}
